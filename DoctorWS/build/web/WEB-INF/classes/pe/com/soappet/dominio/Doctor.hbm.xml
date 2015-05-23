@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2015 12:08:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pe.com.soappet.dominio.Doctor" table="doctor" catalog="soapet" optimistic-lock="version">
+        <id name="idDoctor" type="int">
+            <column name="idDoctor" />
+            <generator class="assigned" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="50" />
+        </property>
+        <property name="apePaterno" type="string">
+            <column name="ape_paterno" length="50" />
+        </property>
+        <property name="apeMaterno" type="string">
+            <column name="ape_materno" length="50" />
+        </property>
+        <property name="correo" type="string">
+            <column name="correo" length="50" />
+        </property>
+        <property name="celular" type="string">
+            <column name="celular" length="20" />
+        </property>
+        <property name="telefono" type="string">
+            <column name="telefono" length="20" />
+        </property>
+        <property name="dni" type="string">
+            <column name="dni" length="8" />
+        </property>
+         <property name="estado" type="int">
+            <column name="estado"/>
+        </property>
+        
+    </class>
+</hibernate-mapping>

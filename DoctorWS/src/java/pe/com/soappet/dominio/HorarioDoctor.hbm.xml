@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 21/05/2015 12:08:03 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pe.com.soappet.dominio.HorarioDoctor" table="horario_doctor" catalog="soapet" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="doctor" class="pe.com.soappet.dominio.Doctor" >
+            <column name="id_doctor" />
+        </many-to-one>
+        <property name="fechaEntrada" type="timestamp">
+            <column name="fecha_entrada" length="19" />
+        </property>
+        <property name="fechaSalida" type="timestamp">
+            <column name="fecha_salida" length="19" />
+        </property>
+    </class>
+</hibernate-mapping>
