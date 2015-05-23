@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+    <h:body>
+        <ui:composition template="templates/mainPage.xhtml">
+            <ui:define name="content">
+                <h:form >
+
+                    <div class="row">
+                        <div class="col-md-4"><h3>Listado de doctores</h3></div>
+                        <div class="col-md-4">
+                            <div class="btn-group btn-group-justified" role="group">
+
+                                <h:commandLink styleClass="btn btn-default" action="doctorForm?faces-redirect=true">Agregar</h:commandLink>
+
+                                <h:commandLink styleClass="btn btn-default" action="listadoDoctores?faces-redirect=true">Eliminar</h:commandLink>
+
+                                <h:commandLink styleClass="btn btn-default" action="doctorForm?faces-redirect=true">Editar</h:commandLink>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <p:messages id="messages" showDetail="false" autoUpdate="true" closable="true"/>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 5px">
+                        <div class="col-md-8">
+                            <div class="input-group">
+                                <h:inputText styleClass="form-control"/>
+                                <span class="input-group-btn">
+                                    <h:commandLink styleClass="btn btn-default" title="Buscar">
+                                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Buscar
+                                    </h:commandLink>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="table-responsive">
+                                <h:dataTable value="#{listadoDoctoresManaged.listaDoctores}" var="doc"
+                                             styleClass="table table-bordered table-condensed">
+                                    <h:column><f:facet name="header">Código</f:facet>#{doc.idDoctor}</h:column>
+                                    <h:column><f:facet name="header">Apellidos</f:facet>#{doc.apePaterno} #{doc.apeMaterno}</h:column>
+                                    <h:column><f:facet name="header">Nombre</f:facet>#{doc.nombre}</h:column>
+                                    <h:column><f:facet name="header">Correo</f:facet>#{doc.correo}</h:column>
+                                    <h:column><f:facet name="header">Telefono</f:facet>#{doc.telefono}</h:column>
+                                    <h:column><f:facet name="header">Horario</f:facet>
+                                        <h:commandLink action="horario?faces-redirect=true">Ver horario</h:commandLink>
+                                    </h:column>
+                                    <h:column><f:facet name="header"></f:facet>
+                                        <h:commandLink action="#{doctorForm.ver(doc.idDoctor)}">
+                                            <span class="glyphicon glyphicon-pencil"/>
+                                        </h:commandLink>
+                                        <h:commandLink action="#{listadoDoctoresManaged.eliminar(doc.idDoctor)}">
+                                            <span class="glyphicon glyphicon-trash"/>
+                                        </h:commandLink>
+                                    </h:column>
+                                </h:dataTable>
+                            </div>
+                        </div>
+                    </div>
+
+                </h:form>
+            </ui:define>
+        </ui:composition>   
+    </h:body>
+</html>
+

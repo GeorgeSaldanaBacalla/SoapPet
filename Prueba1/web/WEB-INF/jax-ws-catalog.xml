@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/Administrador/Desktop/wsSUMA.asmx.wsdl" uri="wsdl/wsSUMA.asmx.wsdl"/>
+    <system systemId="http://localhost:8080/DoctorWS/DoctorWS?wsdl" uri="wsdl/localhost_8080/DoctorWS/DoctorWS.wsdl"/>
+    <system systemId="http://localhost:8080/DoctorWS/DoctorWS?xsd=1" uri="wsdl/localhost_8080/DoctorWS/DoctorWS.xsd_1.xsd"/>
+</catalog>
