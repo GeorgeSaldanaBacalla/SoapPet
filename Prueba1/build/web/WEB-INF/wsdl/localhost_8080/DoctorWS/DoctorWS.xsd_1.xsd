@@ -48,7 +48,7 @@
 
 <xs:complexType name="guardarDoctorResponse">
 <xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0" />
+<xs:element name="return" type="tns:doctor" minOccurs="0" />
 </xs:sequence>
 </xs:complexType>
 
@@ -59,9 +59,7 @@
 </xs:complexType>
 
 <xs:complexType name="eliminarDoctorResponse">
-<xs:sequence>
-<xs:element name="return" type="xs:string" minOccurs="0" />
-</xs:sequence>
+<xs:sequence />
 </xs:complexType>
 
 <xs:complexType name="obtenerDoctor">

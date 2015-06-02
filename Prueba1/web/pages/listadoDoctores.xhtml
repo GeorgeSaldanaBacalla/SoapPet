@@ -12,15 +12,15 @@
                 <h:form >
 
                     <div class="row">
-                        <div class="col-md-4"><h3>Listado de doctores</h3></div>
-                        <div class="col-md-4">
+                        <div class="col-md-10"><h3>Listado de doctores</h3></div>
+                        <div class="col-md-2">
                             <div class="btn-group btn-group-justified" role="group">
 
-                                <h:commandLink styleClass="btn btn-default" action="doctorForm?faces-redirect=true">Agregar</h:commandLink>
+                                <h:commandLink styleClass="btn btn-default" action="doctorForm?faces-redirect=true">
+                                     <span class="glyphicon glyphicon-plus"/> 
+                                    Agregar</h:commandLink>
 
-                                <h:commandLink styleClass="btn btn-default" action="listadoDoctores?faces-redirect=true">Eliminar</h:commandLink>
-
-                                <h:commandLink styleClass="btn btn-default" action="doctorForm?faces-redirect=true">Editar</h:commandLink>
+                          
 
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                         <div class="col-md-4"></div>
                     </div>
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="table-responsive">
                                 <h:dataTable value="#{listadoDoctoresManaged.listaDoctores}" var="doc"
                                              styleClass="table table-bordered table-condensed">
@@ -58,10 +58,10 @@
                                         <h:commandLink action="horario?faces-redirect=true">Ver horario</h:commandLink>
                                     </h:column>
                                     <h:column><f:facet name="header"></f:facet>
-                                        <h:commandLink action="#{doctorForm.ver(doc.idDoctor)}">
+                                        <h:commandLink action="#{listadoDoctoresManaged.editar(doc.idDoctor)}" title="Editar">
                                             <span class="glyphicon glyphicon-pencil"/>
                                         </h:commandLink>
-                                        <h:commandLink action="#{listadoDoctoresManaged.eliminar(doc.idDoctor)}">
+                                        <h:commandLink action="#{listadoDoctoresManaged.eliminar(doc.idDoctor)}" title="Eliminar">
                                             <span class="glyphicon glyphicon-trash"/>
                                         </h:commandLink>
                                     </h:column>

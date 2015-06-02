@@ -39,31 +39,16 @@ public interface DoctorWS {
 
     /**
      * 
-     * @param idDoctor
-     * @return
-     *     returns java.lang.String
-     */
-    @WebMethod
-    @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "eliminarDoctor", targetNamespace = "http://service.soappet.com.pe/", className = "pe.com.soappet.service.EliminarDoctor")
-    @ResponseWrapper(localName = "eliminarDoctorResponse", targetNamespace = "http://service.soappet.com.pe/", className = "pe.com.soappet.service.EliminarDoctorResponse")
-    @Action(input = "http://service.soappet.com.pe/DoctorWS/eliminarDoctorRequest", output = "http://service.soappet.com.pe/DoctorWS/eliminarDoctorResponse")
-    public String eliminarDoctor(
-        @WebParam(name = "idDoctor", targetNamespace = "")
-        int idDoctor);
-
-    /**
-     * 
      * @param doctor
      * @return
-     *     returns java.lang.String
+     *     returns pe.com.soappet.service.Doctor
      */
     @WebMethod
     @WebResult(targetNamespace = "")
     @RequestWrapper(localName = "guardarDoctor", targetNamespace = "http://service.soappet.com.pe/", className = "pe.com.soappet.service.GuardarDoctor")
     @ResponseWrapper(localName = "guardarDoctorResponse", targetNamespace = "http://service.soappet.com.pe/", className = "pe.com.soappet.service.GuardarDoctorResponse")
     @Action(input = "http://service.soappet.com.pe/DoctorWS/guardarDoctorRequest", output = "http://service.soappet.com.pe/DoctorWS/guardarDoctorResponse")
-    public String guardarDoctor(
+    public Doctor guardarDoctor(
         @WebParam(name = "doctor", targetNamespace = "")
         Doctor doctor);
 
@@ -81,5 +66,17 @@ public interface DoctorWS {
     public Doctor obtenerDoctor(
         @WebParam(name = "id", targetNamespace = "")
         int id);
+
+    /**
+     * 
+     * @param idDoctor
+     */
+    @WebMethod
+    @RequestWrapper(localName = "eliminarDoctor", targetNamespace = "http://service.soappet.com.pe/", className = "pe.com.soappet.service.EliminarDoctor")
+    @ResponseWrapper(localName = "eliminarDoctorResponse", targetNamespace = "http://service.soappet.com.pe/", className = "pe.com.soappet.service.EliminarDoctorResponse")
+    @Action(input = "http://service.soappet.com.pe/DoctorWS/eliminarDoctorRequest", output = "http://service.soappet.com.pe/DoctorWS/eliminarDoctorResponse")
+    public void eliminarDoctor(
+        @WebParam(name = "idDoctor", targetNamespace = "")
+        int idDoctor);
 
 }

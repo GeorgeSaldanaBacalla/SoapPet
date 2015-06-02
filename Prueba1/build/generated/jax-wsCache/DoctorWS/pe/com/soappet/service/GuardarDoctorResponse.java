@@ -17,7 +17,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent>
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
  *       &lt;sequence>
- *         &lt;element name="return" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="return" type="{http://service.soappet.com.pe/}doctor" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -33,17 +33,17 @@ import javax.xml.bind.annotation.XmlType;
 public class GuardarDoctorResponse {
 
     @XmlElement(name = "return")
-    protected String _return;
+    protected Doctor _return;
 
     /**
      * Obtiene el valor de la propiedad return.
      * 
      * @return
      *     possible object is
-     *     {@link String }
+     *     {@link Doctor }
      *     
      */
-    public String getReturn() {
+    public Doctor getReturn() {
         return _return;
     }
 
@@ -52,10 +52,10 @@ public class GuardarDoctorResponse {
      * 
      * @param value
      *     allowed object is
-     *     {@link String }
+     *     {@link Doctor }
      *     
      */
-    public void setReturn(String value) {
+    public void setReturn(Doctor value) {
         this._return = value;
     }
 

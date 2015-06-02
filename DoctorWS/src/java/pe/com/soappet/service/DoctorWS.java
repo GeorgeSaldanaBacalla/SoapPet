@@ -42,20 +42,20 @@ public class DoctorWS {
      * Web service operation
      */
     @WebMethod(operationName = "guardarDoctor")
-    public String guardarDoctor(@WebParam(name = "doctor") Doctor doctor) {
+    public Doctor guardarDoctor(@WebParam(name = "doctor") Doctor doctor) {
         DoctorDAO doctorDao = new DoctorDAO();
-        doctorDao.registrarDoctor(doctor);
-        return "Los datos se guardaron exitosamente";
+        doctor.setEstado(1);
+        Doctor doc = doctorDao.registrarDoctor(doctor);
+        return doc;
     }
 
     /**
      * Web service operation
      */
     @WebMethod(operationName = "eliminarDoctor")
-    public String eliminarDoctor(@WebParam(name = "idDoctor") int idDoctor) {
+    public void eliminarDoctor(@WebParam(name = "idDoctor") int idDoctor) {
         DoctorDAO doctorDao = new DoctorDAO();
         doctorDao.eliminarDoctor(idDoctor);
-        return "Se elimino exitosamente";
     }
 
 }
