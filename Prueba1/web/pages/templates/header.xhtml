@@ -7,6 +7,7 @@
       xmlns:ui="http://java.sun.com/jsf/facelets">
 
     <h:body>
+        <h:form>
         <nav class="navbar navbar-default">
 
             <div class="container-fluid">
@@ -21,8 +22,13 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><h:commandLink action="listadoDoctores?faces-redirect=true">
+                                Doctores
+                            </h:commandLink>
+                        </li>
+                        <li><h:commandLink action="historiaClinicaForm?faces-redirect=true">
+                                Historia clinica
+                            </h:commandLink></li>
                         <li><a href="#">Contact</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
@@ -45,7 +51,7 @@
                 </div>
             </div>
         </nav>
-
+</h:form>
     </h:body>
 </html>
 
