@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestService", "RestService\RestService.csproj", "{AB9679C3-286B-41BA-8E36-3284F181D4F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Librerias", "Librerias", "{AA27B75B-AD14-4008-A162-1C02F91D31B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RESTTests", "RESTTests\RESTTests.csproj", "{74454875-7648-41BF-AE09-31A679E1DF77}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB9679C3-286B-41BA-8E36-3284F181D4F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB9679C3-286B-41BA-8E36-3284F181D4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB9679C3-286B-41BA-8E36-3284F181D4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB9679C3-286B-41BA-8E36-3284F181D4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74454875-7648-41BF-AE09-31A679E1DF77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74454875-7648-41BF-AE09-31A679E1DF77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74454875-7648-41BF-AE09-31A679E1DF77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74454875-7648-41BF-AE09-31A679E1DF77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
