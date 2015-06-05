@@ -1,0 +1,5 @@
+C:\Users\Jorge\Desktop\MascotaService\MascotaService\MascotaService\bin\MascotaService.dll.config
+C:\Users\Jorge\Desktop\MascotaService\MascotaService\MascotaService\bin\MascotaService.dll
+C:\Users\Jorge\Desktop\MascotaService\MascotaService\MascotaService\bin\MascotaService.pdb
+C:\Users\Jorge\Desktop\MascotaService\MascotaService\MascotaService\obj\Debug\MascotaService.dll
+C:\Users\Jorge\Desktop\MascotaService\MascotaService\MascotaService\obj\Debug\MascotaService.pdb
