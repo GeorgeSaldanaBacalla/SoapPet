@@ -1,0 +1,16 @@
+c:\DSD\ProyectoSDS\RestService\bin\RestService.dll.config
+c:\DSD\ProyectoSDS\RestService\bin\RestService.dll
+c:\DSD\ProyectoSDS\RestService\bin\RestService.pdb
+c:\DSD\ProyectoSDS\RestService\obj\Debug\RestService.csprojResolveAssemblyReference.cache
+c:\DSD\ProyectoSDS\RestService\obj\Debug\RestService.dll
+c:\DSD\ProyectoSDS\RestService\obj\Debug\RestService.pdb
+C:\1a\ProyectoSDS\RestService\bin\RestService.dll
+C:\1a\ProyectoSDS\RestService\bin\RestService.pdb
+C:\1a\ProyectoSDS\RestService\obj\Debug\RestService.csprojResolveAssemblyReference.cache
+C:\1a\ProyectoSDS\RestService\obj\Debug\RestService.dll
+C:\1a\ProyectoSDS\RestService\obj\Debug\RestService.pdb
+C:\1a\Proyecto\ProyectoSDS\RestService\bin\RestService.dll
+C:\1a\Proyecto\ProyectoSDS\RestService\bin\RestService.pdb
+C:\1a\Proyecto\ProyectoSDS\RestService\obj\Debug\RestService.csprojResolveAssemblyReference.cache
+C:\1a\Proyecto\ProyectoSDS\RestService\obj\Debug\RestService.dll
+C:\1a\Proyecto\ProyectoSDS\RestService\obj\Debug\RestService.pdb
