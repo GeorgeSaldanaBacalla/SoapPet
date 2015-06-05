@@ -1,0 +1,9 @@
+E:\u201220901\ProyectoDSD\RESTTests\bin\Debug\RESTTests.dll
+E:\u201220901\ProyectoDSD\RESTTests\bin\Debug\RESTTests.pdb
+E:\u201220901\ProyectoDSD\RESTTests\obj\Debug\RESTTests.dll
+E:\u201220901\ProyectoDSD\RESTTests\obj\Debug\RESTTests.pdb
+D:\u201220901\ProyectoDSD\RESTTests\bin\Debug\RESTTests.dll
+D:\u201220901\ProyectoDSD\RESTTests\bin\Debug\RESTTests.pdb
+D:\u201220901\ProyectoDSD\RESTTests\obj\Debug\RESTTests.dll
+D:\u201220901\ProyectoDSD\RESTTests\obj\Debug\RESTTests.pdb
+D:\u201220901\ProyectoDSD\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache

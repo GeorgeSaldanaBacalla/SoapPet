@@ -1,0 +1,16 @@
+E:\u201220901\ProyectoDSD\RestServices\bin\RestServices.dll.config
+E:\u201220901\ProyectoDSD\RestServices\bin\RestServices.dll
+E:\u201220901\ProyectoDSD\RestServices\bin\RestServices.pdb
+E:\u201220901\ProyectoDSD\RestServices\obj\Debug\RestServices.dll
+E:\u201220901\ProyectoDSD\RestServices\obj\Debug\RestServices.pdb
+D:\u201220901\ProyectoDSD\RestServices\bin\RestServices.dll.config
+D:\u201220901\ProyectoDSD\RestServices\bin\RestServices.dll
+D:\u201220901\ProyectoDSD\RestServices\bin\RestServices.pdb
+D:\u201220901\ProyectoDSD\RestServices\obj\Debug\RestServices.dll
+D:\u201220901\ProyectoDSD\RestServices\obj\Debug\RestServices.pdb
+D:\u201220901\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll.config
+D:\u201220901\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll
+D:\u201220901\ProyectoDSDEvaluacion\RestServices\bin\RestServices.pdb
+D:\u201220901\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.csprojResolveAssemblyReference.cache
+D:\u201220901\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.dll
+D:\u201220901\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.pdb
