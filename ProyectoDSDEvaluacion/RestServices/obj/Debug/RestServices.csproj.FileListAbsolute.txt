@@ -14,3 +14,15 @@ D:\u201220901\ProyectoDSDEvaluacion\RestServices\bin\RestServices.pdb
 D:\u201220901\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.csprojResolveAssemblyReference.cache
 D:\u201220901\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.dll
 D:\u201220901\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.pdb
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.csprojResolveAssemblyReference.cache
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.dll
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.pdb
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll.config
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\bin\RestServices.pdb
+C:\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll.config
+C:\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll
+C:\ProyectoDSDEvaluacion\RestServices\bin\RestServices.pdb
+C:\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.dll
+C:\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.pdb
+C:\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.csprojResolveAssemblyReference.cache

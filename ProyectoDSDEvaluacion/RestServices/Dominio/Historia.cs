@@ -7,17 +7,17 @@ using System.Web;
 namespace RestServices.Dominio
 {
     [DataContract]
-    public class Evaluacion
+    public class Historia
     {
         [DataMember]
-        public string Idevaluacion { get; set; }
+        public string Idhistoria { get; set; }
         [DataMember]
-        public string Fecha { get; set; }
-        [DataMember]
-        public string Pregunta { get; set; }
-        [DataMember]
-        public string Respuesta { get; set; }
+        public string Idmascota { get; set; }
         [DataMember]
         public string Idcita { get; set; }
+        [DataMember]
+        public string Diagnostico { get; set; }
+        [DataMember]
+        public string Tratamiento { get; set; }
     }
 }

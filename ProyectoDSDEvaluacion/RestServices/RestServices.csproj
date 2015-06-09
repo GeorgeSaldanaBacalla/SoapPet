@@ -61,15 +61,26 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Clientes.svc" />
     <Content Include="Evaluaciones.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Clientes.svc.cs">
+      <DependentUpon>Clientes.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Cliente.cs" />
     <Compile Include="Dominio\Evaluacion.cs" />
+    <Compile Include="Dominio\Mascota.cs" />
     <Compile Include="Evaluaciones.svc.cs">
       <DependentUpon>Evaluaciones.svc</DependentUpon>
     </Compile>
+    <Compile Include="IClientes.cs" />
     <Compile Include="IEvaluaciones.cs" />
+    <Compile Include="Persistencia\MascotaDAO.cs" />
+    <Compile Include="Persistencia\ClienteDAO.cs" />
     <Compile Include="Persistencia\EvaluacionDAO.cs" />
     <Compile Include="Persistencia\ConexionUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +89,7 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\profile1.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

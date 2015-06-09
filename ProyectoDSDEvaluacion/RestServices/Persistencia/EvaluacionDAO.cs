@@ -1,4 +1,4 @@
-﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -34,11 +34,11 @@ namespace RestServices.Persistencia
 
             }
 
-            EvaluacionCreado = Obtener((int)idevaluacion);
+            EvaluacionCreado = Obtener(Convert.ToString(idevaluacion));
             return EvaluacionCreado;
 
         }
-        public Evaluacion Obtener(Int32 idevaluacion)
+        public Evaluacion Obtener(string idevaluacion)
         {
             Evaluacion EvaluacionEncontrado = null;
 
@@ -57,14 +57,14 @@ namespace RestServices.Persistencia
 
                 if (reader.Read())
                 {
-                    DateTime fec = (DateTime) reader["fecha"];
+                    DateTime fec = (DateTime)reader["fecha"];
                     EvaluacionEncontrado = new Evaluacion()
                     {
-                        Idevaluacion = (int)     reader["idevaluacion"],
-                        Fecha        = fec.ToString("yyyy-MM-dd HH:mm:ss"),
-                        Pregunta     = (string)  reader["pregunta"],
-                        Respuesta    = (string)  reader["respuesta"],
-                        Idcita       = (int)     reader["idcita"]
+                        Idevaluacion = (string)reader["idevaluacion"],
+                        Fecha = fec.ToString("yyyy-MM-dd HH:mm:ss"),
+                        Pregunta = (string)reader["pregunta"],
+                        Respuesta = (string)reader["respuesta"],
+                        Idcita = (string)reader["idcita"]
                     };
                 }
             }

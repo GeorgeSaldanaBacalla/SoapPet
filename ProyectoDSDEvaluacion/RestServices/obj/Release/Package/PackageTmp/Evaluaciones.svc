@@ -1,0 +1,7 @@
+﻿<%@ 
+    ServiceHost Language="C#" 
+    Debug="true" 
+    Service="RestServices.Evaluaciones" 
+    CodeBehind="Evaluaciones.svc.cs" 
+    Factory="System.ServiceModel.Activation.WebServiceHostFactory"
+    %>

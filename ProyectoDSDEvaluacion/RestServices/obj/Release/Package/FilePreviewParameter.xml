@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="http://192.168.8.106:8080/Evaluaciones.svc" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\jblp\\Desktop\\ProyectoDSDEvaluacion\\RestServices\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\jblp\\Desktop\\ProyectoDSDEvaluacion\\RestServices\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+</parameters>

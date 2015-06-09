@@ -22,7 +22,7 @@ namespace RestServices
 
         public Evaluacion ObtenerEvaluacion(string idevaluacion)
         {
-            return dao.Obtener(Convert.ToInt32(idevaluacion));
+            return dao.Obtener(idevaluacion);
         }
 
         public Evaluacion ModificarEvaluacion(Evaluacion evaluacionAModificar)

@@ -1,0 +1,6 @@
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll.config
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\bin\RestServices.pdb
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\obj\Release\RestServices.csprojResolveAssemblyReference.cache
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\obj\Release\RestServices.dll
+C:\Users\jblp\Desktop\ProyectoDSDEvaluacion\RestServices\obj\Release\RestServices.pdb

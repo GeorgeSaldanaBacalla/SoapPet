@@ -42,7 +42,7 @@ namespace RESTTests
             StreamReader reader2 = new StreamReader(res2.GetResponseStream());
             string alumnoJson2 = reader2.ReadToEnd();
             JavaScriptSerializer js2 = new JavaScriptSerializer();
-            Alumno alumnoObtenido = js2.Deserialize<Alumno>(alumnoJson2);
+            Evaluacion alumnoObtenido = js2.Deserialize<Evaluacion>(alumnoJson2);
             Assert.AreEqual("Califique el trato del doctor", evaluacionCreado.Pregunta);
             Assert.AreEqual("Bueno", evaluacionCreado.Respuesta);
         }
@@ -75,7 +75,7 @@ namespace RESTTests
             StreamReader reader2 = new StreamReader(res2.GetResponseStream());
             string EvaluacionJson2 = reader2.ReadToEnd();
             JavaScriptSerializer js2 = new JavaScriptSerializer();
-            Alumno evaluacionObtenido = js2.Deserialize<Alumno>(EvaluacionJson2);
+            Evaluacion evaluacionObtenido = js2.Deserialize<Evaluacion>(EvaluacionJson2);
             Assert.IsNull(evaluacionObtenido);
         }
         [TestMethod]
