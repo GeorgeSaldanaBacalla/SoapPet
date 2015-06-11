@@ -37,10 +37,5 @@ namespace RestServices
             dao.Eliminar(clienteAEliminar);
         }
 
-        public List<Cliente> ListarClientes()
-        {
-            // TODO:
-            throw new NotImplementedException();
-        }
     }
 }

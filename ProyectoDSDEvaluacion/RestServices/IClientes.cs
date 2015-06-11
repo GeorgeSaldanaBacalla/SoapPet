@@ -29,8 +29,5 @@ namespace RestServices
         [WebInvoke(Method = "DELETE", UriTemplate = "Clientes", ResponseFormat = WebMessageFormat.Json)]
         void EliminarCliente(Cliente clienteAEliminar);
 
-        [OperationContract]
-        // TODO:
-        List<Cliente> ListarClientes();
     }
 }
