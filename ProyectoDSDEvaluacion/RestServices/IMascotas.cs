@@ -30,7 +30,7 @@ namespace RestServices
         void EliminarMascota(Mascota mascotaAEliminar);
 
         [OperationContract]
-        // TODO:
-        List<Mascota> ListarMascotas();
+        [WebInvoke(Method = "GET", UriTemplate = "MascotasCliente/{idcliente}", ResponseFormat = WebMessageFormat.Json)]
+        List<Mascota> ListarMascotasPorCliente(string idcliente);
     }
 }

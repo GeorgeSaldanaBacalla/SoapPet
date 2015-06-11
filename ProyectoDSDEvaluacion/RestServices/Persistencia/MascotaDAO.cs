@@ -14,7 +14,7 @@ namespace RestServices.Persistencia
         {
             Mascota MascotaCreado = null;
             long idmascota;
-            string sql = "INSERT INTO mascota Values ( @nombre, @ape_pat, @ape_mat, @raza, @edad, @peso)";
+            string sql = "INSERT INTO mascota (idcliente,nombre,ape_paterno,ape_materno,raza,edad,peso) values ( @idcliente,@nombre, @ape_pat, @ape_mat, @raza, @edad, @peso)";
 
             using (MySqlConnection con = new MySqlConnection(ConexionUtil.Cadena))
             {
@@ -22,10 +22,10 @@ namespace RestServices.Persistencia
                 using (MySqlCommand cmd = new MySqlCommand(sql, con))
                 {
                     cmd.Prepare();
-
+                    cmd.Parameters.AddWithValue("@idcliente", mascotaACrear.Idcliente);
                     cmd.Parameters.AddWithValue("@nombre", mascotaACrear.Nombre);
-                    cmd.Parameters.AddWithValue("@ape_pat", mascotaACrear.Ape_Pat);
-                    cmd.Parameters.AddWithValue("@ape_mat", mascotaACrear.Ape_Mat);
+                    cmd.Parameters.AddWithValue("@ape_pat", mascotaACrear.ApePaterno);
+                    cmd.Parameters.AddWithValue("@ape_mat", mascotaACrear.ApeMaterno);
                     cmd.Parameters.AddWithValue("@raza", mascotaACrear.Raza);
                     cmd.Parameters.AddWithValue("@edad", mascotaACrear.Edad);
                     cmd.Parameters.AddWithValue("@peso", mascotaACrear.Peso);
@@ -63,9 +63,10 @@ namespace RestServices.Persistencia
                     MascotaEncontrado = new Mascota()
                     {
                         Idmascota = (reader["idmascota"] ?? "").ToString(),
+                        Idcliente = (reader["idcliente"] ?? "").ToString(),
                         Nombre = (reader["nombre"] ?? "").ToString(),
-                        Ape_Pat = (reader["ape_paterno"] ?? "").ToString(),
-                        Ape_Mat = (reader["ape_materno"] ?? "").ToString(),
+                        ApePaterno = (reader["ape_paterno"] ?? "").ToString(),
+                        ApeMaterno = (reader["ape_materno"] ?? "").ToString(),
                         Raza = (reader["raza"] ?? "").ToString(),
                         Edad = (reader["edad"] ?? "").ToString(),
                         Peso = (reader["peso"] ?? "").ToString(),
@@ -92,7 +93,7 @@ namespace RestServices.Persistencia
         }
         public Mascota Modificar(Mascota mascotaAModificar)
         {
-            string sql = "UPDATE mascota SET nombre=@nombre, ape_paterno=@ape_paterno,ape_materno=@ape_materno,telefono=@telefono, celular=@celular,correo=@correo,direccion=@direccion " +
+            string sql = "UPDATE mascota SET idcliente=@idcliente, nombre=@nombre, ape_paterno=@ape_paterno, ape_materno=@ape_materno, raza=@raza, edad=@edad, peso=@peso " +
                          "WHERE idmascota = @idmascota";
 
             using (MySqlConnection con = new MySqlConnection(ConexionUtil.Cadena))
@@ -101,10 +102,11 @@ namespace RestServices.Persistencia
                 using (MySqlCommand cmd = new MySqlCommand(sql, con))
                 {
                     cmd.Prepare();
-
+                    cmd.Parameters.AddWithValue("@idmascota", mascotaAModificar.Idmascota);
+                    cmd.Parameters.AddWithValue("@idcliente", mascotaAModificar.Idcliente);
                     cmd.Parameters.AddWithValue("@nombre", mascotaAModificar.Nombre);
-                    cmd.Parameters.AddWithValue("@ape_pat", mascotaAModificar.Ape_Pat);
-                    cmd.Parameters.AddWithValue("@ape_mat", mascotaAModificar.Ape_Mat);
+                    cmd.Parameters.AddWithValue("@ape_paterno", mascotaAModificar.ApePaterno);
+                    cmd.Parameters.AddWithValue("@ape_materno", mascotaAModificar.ApeMaterno);
                     cmd.Parameters.AddWithValue("@raza", mascotaAModificar.Raza);
                     cmd.Parameters.AddWithValue("@edad", mascotaAModificar.Edad);
                     cmd.Parameters.AddWithValue("@peso", mascotaAModificar.Peso);
@@ -130,10 +132,56 @@ namespace RestServices.Persistencia
 
             }
         }
-        public List<Mascota> ListarTodos()
+        public List<Mascota> ListarMascotasPorCliente(string idcliente)
         {
-            // TODO:
-            return null;
+
+            List<Mascota> listaMascotas = new List<Mascota>();
+
+            MySqlConnection con = new MySqlConnection(ConexionUtil.Cadena);
+            MySqlCommand cmd;
+            MySqlDataReader reader = null;
+
+            con.Open();
+
+            try
+            {
+                cmd = con.CreateCommand();
+                cmd.CommandText = "SELECT * FROM mascota where idcliente=@idcliente";
+                cmd.Parameters.AddWithValue("@idcliente", idcliente);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Mascota mascotaEncontrado = new Mascota()
+                    {
+                        Idmascota = (reader["idmascota"] ?? "").ToString(),
+                        Idcliente = (reader["idcliente"] ?? "").ToString(),
+                        Nombre = (reader["nombre"] ?? "").ToString(),
+                        ApePaterno = (reader["ape_paterno"] ?? "").ToString(),
+                        ApeMaterno = (reader["ape_materno"] ?? "").ToString(),
+                        Raza = (reader["raza"] ?? "").ToString(),
+                        Edad = (reader["edad"] ?? "").ToString(),
+                        Peso = (reader["peso"] ?? "").ToString(),
+                    };
+                    listaMascotas.Add(mascotaEncontrado);
+                }
+            }
+            catch (MySqlException err)
+            {
+                Console.WriteLine("Error: " + err.ToString());
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    reader.Close();
+                }
+                if (con != null)
+                {
+                    con.Close(); //close the connection
+                }
+            }
+            return listaMascotas;
         }
     }
 }

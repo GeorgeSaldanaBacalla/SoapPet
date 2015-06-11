@@ -37,10 +37,10 @@ namespace RestServices
             dao.Eliminar(mascotaAEliminar);
         }
 
-        public List<Mascota> ListarMascotas()
+        public List<Mascota> ListarMascotasPorCliente(string idcliente)
         {
             // TODO:
-            throw new NotImplementedException();
+            return dao.ListarMascotasPorCliente(idcliente);
         }
     }
 }

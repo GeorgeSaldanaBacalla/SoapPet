@@ -40,7 +40,7 @@ namespace RestServices
         public List<Doctor> ListarDoctores()
         {
             // TODO:
-            throw new NotImplementedException();
+            return dao.ListarDoctores();
         }
     }
 }

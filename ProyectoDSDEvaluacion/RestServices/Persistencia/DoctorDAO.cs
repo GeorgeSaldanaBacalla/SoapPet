@@ -100,7 +100,7 @@ namespace RestServices.Persistencia
                 using (MySqlCommand cmd = new MySqlCommand(sql, con))
                 {
                     cmd.Prepare();
-
+                    cmd.Parameters.AddWithValue("@iddoctor", doctorAModificar.Iddoctor);
                     cmd.Parameters.AddWithValue("@nombre", doctorAModificar.Nombre);
                     cmd.Parameters.AddWithValue("@ape_paterno", doctorAModificar.ApePaterno);
                     cmd.Parameters.AddWithValue("@ape_materno", doctorAModificar.ApeMaterno);
@@ -129,10 +129,54 @@ namespace RestServices.Persistencia
 
             }
         }
-        public List<Doctor> ListarTodos()
+        public List<Doctor> ListarDoctores()
         {
-            // TODO:
-            return null;
+            
+            List<Doctor> listaDoctores = new List<Doctor>();
+
+            MySqlConnection con = new MySqlConnection(ConexionUtil.Cadena);
+            MySqlCommand cmd;
+            MySqlDataReader reader = null;
+
+            con.Open();
+
+            try
+            {
+                cmd = con.CreateCommand();
+                cmd.CommandText = "SELECT * FROM doctor";
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Doctor doctorEncontrado = new Doctor()
+                    {
+                        Iddoctor = (reader["iddoctor"] ?? "").ToString(),
+                        Nombre = (reader["nombre"] ?? "").ToString(),
+                        ApePaterno = (reader["ape_paterno"] ?? "").ToString(),
+                        ApeMaterno = (reader["ape_materno"] ?? "").ToString(),
+                        Correo = (reader["correo"] ?? "").ToString(),
+                        Telefono = (reader["telefono"] ?? "").ToString(),
+                        Celular = (reader["celular"] ?? "").ToString(),
+                    };
+                    listaDoctores.Add(doctorEncontrado);
+                }
+            }
+            catch (MySqlException err)
+            {
+                Console.WriteLine("Error: " + err.ToString());
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    reader.Close();
+                }
+                if (con != null)
+                {
+                    con.Close(); //close the connection
+                }
+            }
+            return listaDoctores;
         }
     }
 }

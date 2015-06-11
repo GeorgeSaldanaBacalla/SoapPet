@@ -11,11 +11,13 @@ namespace RestServices.Dominio
         [DataMember]
         public string Idmascota { get; set; }
         [DataMember]
+        public string Idcliente { get; set; }
+        [DataMember]
         public string Nombre { get; set; }
         [DataMember]
-        public string Ape_Pat { get; set; }
+        public string ApePaterno { get; set; }
         [DataMember]
-        public string Ape_Mat { get; set; }
+        public string ApeMaterno { get; set; }
         [DataMember]
         public string Raza { get; set; }
         [DataMember]

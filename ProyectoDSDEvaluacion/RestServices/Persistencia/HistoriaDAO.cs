@@ -96,7 +96,7 @@ namespace RestServices.Persistencia
                 using (MySqlCommand cmd = new MySqlCommand(sql, con))
                 {
                     cmd.Prepare();
-
+                    cmd.Parameters.AddWithValue("@idhistoria", historiaAModificar.Idhistoria);
                     cmd.Parameters.AddWithValue("@idmascota", historiaAModificar.Idmascota);
                     cmd.Parameters.AddWithValue("@idcita", historiaAModificar.Idcita);
                     cmd.Parameters.AddWithValue("@diagnostico", historiaAModificar.Diagnostico);
@@ -123,10 +123,53 @@ namespace RestServices.Persistencia
 
             }
         }
-        public List<Historia> ListarTodos()
+        public List<Historia> ListarHistoriasPorMascota(string idmascota)
         {
-            // TODO:
-            return null;
+
+            List<Historia> listaHistorias = new List<Historia>();
+
+            MySqlConnection con = new MySqlConnection(ConexionUtil.Cadena);
+            MySqlCommand cmd;
+            MySqlDataReader reader = null;
+
+            con.Open();
+
+            try
+            {
+                cmd = con.CreateCommand();
+                cmd.CommandText = "SELECT * FROM historia where idmascota=@idmascota";
+                cmd.Parameters.AddWithValue("@idmascota", idmascota);
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Historia historiaEncontrado = new Historia()
+                    {
+                        Idhistoria = (reader["idhistoria"] ?? "").ToString(),
+                        Idmascota = (reader["idmascota"] ?? "").ToString(),
+                        Idcita = (reader["idcita"] ?? "").ToString(),
+                        Diagnostico = (reader["diagnostico"] ?? "").ToString(),
+                        Tratamiento = (reader["tratamiento"] ?? "").ToString()
+                    };
+                    listaHistorias.Add(historiaEncontrado);
+                }
+            }
+            catch (MySqlException err)
+            {
+                Console.WriteLine("Error: " + err.ToString());
+            }
+            finally
+            {
+                if (reader != null)
+                {
+                    reader.Close();
+                }
+                if (con != null)
+                {
+                    con.Close(); //close the connection
+                }
+            }
+            return listaHistorias;
         }
     }
 }

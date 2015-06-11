@@ -102,7 +102,7 @@ namespace RestServices.Persistencia
                 using (MySqlCommand cmd = new MySqlCommand(sql, con))
                 {
                     cmd.Prepare();
-
+                    cmd.Parameters.AddWithValue("@idcliente", clienteAModificar.Idcliente);
                     cmd.Parameters.AddWithValue("@nombre", clienteAModificar.Nombre);
                     cmd.Parameters.AddWithValue("@ape_paterno", clienteAModificar.ApePaterno);
                     cmd.Parameters.AddWithValue("@ape_materno", clienteAModificar.ApeMaterno);

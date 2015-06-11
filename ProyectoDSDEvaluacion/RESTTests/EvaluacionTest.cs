@@ -36,7 +36,7 @@ namespace RESTTests
 
             // Prueba de obtención de alumno vía HTTP GET
             HttpWebRequest req2 = (HttpWebRequest)WebRequest
-                .Create("http://localhost:2744/Alumnos.svc/Alumnos/" + evaluacionCreado.Idevaluacion);
+                .Create("http://localhost:2744/Evaluaciones.svc/Evaluaciones/" + evaluacionCreado.Idevaluacion);
             req2.Method = "GET";
             HttpWebResponse res2 = (HttpWebResponse)req2.GetResponse();
             StreamReader reader2 = new StreamReader(res2.GetResponseStream());

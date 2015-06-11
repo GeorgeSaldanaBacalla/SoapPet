@@ -25,4 +25,3 @@ C:\ProyectoDSDEvaluacion\RestServices\bin\RestServices.dll
 C:\ProyectoDSDEvaluacion\RestServices\bin\RestServices.pdb
 C:\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.dll
 C:\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.pdb
-C:\ProyectoDSDEvaluacion\RestServices\obj\Debug\RestServices.csprojResolveAssemblyReference.cache

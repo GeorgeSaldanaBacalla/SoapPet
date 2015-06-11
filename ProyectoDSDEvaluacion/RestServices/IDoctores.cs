@@ -30,7 +30,7 @@ namespace RestServices
         void EliminarDoctor(Doctor doctorAEliminar);
 
         [OperationContract]
-        // TODO:
+        [WebInvoke(Method = "GET", UriTemplate = "ListaDoctores", ResponseFormat = WebMessageFormat.Json)]
         List<Doctor> ListarDoctores();
     }
 }

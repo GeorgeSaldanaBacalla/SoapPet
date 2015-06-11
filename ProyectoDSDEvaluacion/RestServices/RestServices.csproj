@@ -29,6 +29,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -61,24 +62,50 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Citas.svc" />
     <Content Include="Clientes.svc" />
+    <Content Include="Doctores.svc" />
     <Content Include="Evaluaciones.svc" />
+    <Content Include="Historias.svc" />
+    <Content Include="Mascotas.svc" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Citas.svc.cs">
+      <DependentUpon>Citas.svc</DependentUpon>
+    </Compile>
     <Compile Include="Clientes.svc.cs">
       <DependentUpon>Clientes.svc</DependentUpon>
     </Compile>
+    <Compile Include="Doctores.svc.cs">
+      <DependentUpon>Doctores.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Dominio\Cita.cs" />
     <Compile Include="Dominio\Cliente.cs" />
+    <Compile Include="Dominio\Doctor.cs" />
     <Compile Include="Dominio\Evaluacion.cs" />
+    <Compile Include="Dominio\Historia.cs" />
     <Compile Include="Dominio\Mascota.cs" />
     <Compile Include="Evaluaciones.svc.cs">
       <DependentUpon>Evaluaciones.svc</DependentUpon>
     </Compile>
+    <Compile Include="Historias.svc.cs">
+      <DependentUpon>Historias.svc</DependentUpon>
+    </Compile>
+    <Compile Include="ICitas.cs" />
     <Compile Include="IClientes.cs" />
+    <Compile Include="IDoctores.cs" />
     <Compile Include="IEvaluaciones.cs" />
+    <Compile Include="IHistorias.cs" />
+    <Compile Include="IMascotas.cs" />
+    <Compile Include="Mascotas.svc.cs">
+      <DependentUpon>Mascotas.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Persistencia\DoctorDAO.cs" />
+    <Compile Include="Persistencia\HistoriaDAO.cs" />
+    <Compile Include="Persistencia\CitaDAO.cs" />
     <Compile Include="Persistencia\MascotaDAO.cs" />
     <Compile Include="Persistencia\ClienteDAO.cs" />
     <Compile Include="Persistencia\EvaluacionDAO.cs" />

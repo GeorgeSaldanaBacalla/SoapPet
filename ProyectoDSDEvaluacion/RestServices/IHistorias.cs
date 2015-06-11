@@ -30,7 +30,7 @@ namespace RestServices
         void EliminarHistoria(Historia historiaAEliminar);
 
         [OperationContract]
-        // TODO:
-        List<Historia> ListarHistorias();
+        [WebInvoke(Method = "GET", UriTemplate = "HistoriasMascota/{idmascota}", ResponseFormat = WebMessageFormat.Json)]
+        List<Historia> ListarHistoriasPorMascota(string idmascota);
     }
 }

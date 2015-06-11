@@ -37,10 +37,10 @@ namespace RestServices
             dao.Eliminar(historiaAEliminar);
         }
 
-        public List<Historia> ListarHistorias()
+        public List<Historia> ListarHistoriasPorMascota(string idmascota)
         {
             // TODO:
-            throw new NotImplementedException();
+            return dao.ListarHistoriasPorMascota(idmascota);
         }
     }
 }
