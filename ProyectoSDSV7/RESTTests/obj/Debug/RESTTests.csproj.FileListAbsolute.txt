@@ -1,0 +1,60 @@
+C:\1a\ProyectoSDS\RESTTests\bin\Debug\RESTTests.dll
+C:\1a\ProyectoSDS\RESTTests\bin\Debug\RESTTests.pdb
+C:\1a\ProyectoSDS\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\1a\ProyectoSDS\RESTTests\obj\Debug\RESTTests.dll
+C:\1a\ProyectoSDS\RESTTests\obj\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDS\RESTTests\bin\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDS\RESTTests\bin\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDS\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\1a\Proyecto\ProyectoSDS\RESTTests\obj\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDS\RESTTests\obj\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV1\RESTTests\bin\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV1\RESTTests\bin\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV1\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\1a\Proyecto\ProyectoSDSV1\RESTTests\obj\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV1\RESTTests\obj\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV2\RESTTests\bin\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV2\RESTTests\bin\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV2\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\1a\Proyecto\ProyectoSDSV2\RESTTests\obj\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV2\RESTTests\obj\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV3\RESTTests\bin\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV3\RESTTests\bin\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV3\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\1a\Proyecto\ProyectoSDSV3\RESTTests\obj\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV3\RESTTests\obj\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV4\RESTTests\bin\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV4\RESTTests\bin\Debug\RESTTests.pdb
+C:\1a\Proyecto\ProyectoSDSV4\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\1a\Proyecto\ProyectoSDSV4\RESTTests\obj\Debug\RESTTests.dll
+C:\1a\Proyecto\ProyectoSDSV4\RESTTests\obj\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV4\RESTTests\bin\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV4\RESTTests\bin\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV4\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\$1\ProyectoSDSV4\RESTTests\obj\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV4\RESTTests\obj\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV4 - copia\RESTTests\bin\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV4 - copia\RESTTests\bin\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV4 - copia\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\$1\ProyectoSDSV4 - copia\RESTTests\obj\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV4 - copia\RESTTests\obj\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV5\RESTTests\bin\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV5\RESTTests\bin\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV5\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\$1\ProyectoSDSV5\RESTTests\obj\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV5\RESTTests\obj\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV6\RESTTests\bin\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV6\RESTTests\bin\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV6\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\$1\ProyectoSDSV6\RESTTests\obj\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV6\RESTTests\obj\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV7\RESTTests\bin\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV7\RESTTests\bin\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV7\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\$1\ProyectoSDSV7\RESTTests\obj\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV7\RESTTests\obj\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV8\RESTTests\bin\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV8\RESTTests\bin\Debug\RESTTests.pdb
+C:\$1\ProyectoSDSV8\RESTTests\obj\Debug\RESTTests.csprojResolveAssemblyReference.cache
+C:\$1\ProyectoSDSV8\RESTTests\obj\Debug\RESTTests.dll
+C:\$1\ProyectoSDSV8\RESTTests\obj\Debug\RESTTests.pdb
